@@ -1,0 +1,18 @@
+about Quick sort(divide and conquer)
+bhadhi problem ko divide karke solve karke fir sabko joint kar dege.
+
+1.Here first we take an pivat elemnent then two pointers which are next to pivet and last to series.
+2.For ex-35 50 15 25 80 20 90 45.Here in these case pivet element is 35 and two pointers are 50 and 45.
+3.now here what happens from pointer 50 it starts to move on R.H.S side until it found any no. greater then pivet and the second pointer i.e.at 45 stars to move on L.H.S side until it found an y number less than pivt element.
+4.Here the finally happens that all the smaaler element will come to the left side of pivet element and all the larger element will come on the right side of pivet.
+5.Here sometimes we used +infinite sign also we indicate the stopping point,if there is case when there is no smaller element then pivet than in that case we ues +infinte as a stopping point.(For rhs side).
+6.But for L.H.S there is no -infinity because in that case the second pointer atleast should be equal to the pivet in that case it doesn't move further it stops to pivet element only.
+7.Now how it works?
+8.Her first start from first pointer now see whether the ponter is greater than first element or not in that if it is greater than we have to stop the first pointer at that position only.
+9.Now if it is less than the pivet element than we have to go to the next position by moving first pointer to the right side.similarly apply for second pointer if the value is less than pivet is found stop at that position only and if you find the value greater than it then move to L.H.S side.
+10.these method should be apply until both pointer will cross each other,now when both the pointer will cross each other than at that time swap the value of second pointer to the pivet.
+11.these is called phase.1 because in that right side of pivet tharer should be value grater than it and at left side there should be value less than pivet.
+12.Now again ignore the value of pivet or do not chang		e its position from the pivet divide the two partition and apply the same method to it.(both partition).
+13.Or in the case where the crossing of both the pointer is not possible so in that case we have to swap the both pointer values to each other not the swapping of pivet with pointer,than again apply the same method.
+14.Hence the average case time complexity of an quick sort is (nlogn).(2T(n/2) + n).
+15. in case of worst time complexity theb performance is depends on pivet element and it is estimated as a order of n(square).
